@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda de Muebles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="codigo.js"></script>
+	
+</head>
+<body>
+
+    <header>
+        <h1>Muebleria Mayo, una empresa familiar</h1>
+    </header>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#historia">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#catalogo">Catálogo</a>
+                    </li>
+                     <li class="nav-item">
+                     <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                 <!-- Precio total y simbolo carrito -->
+                <div class="cart-icon">
+                    <img src="imagenes/carrodecompras.png" alt="Carrito de compras">
+                    <p id="total">Total: $0.00</p>
+                </div>  
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Bienvenido a Tu Tienda de Muebles</h2>
+                    <p>Somos Muebles Mayo, una empresa comercializadora de reconocida tradición y solidez. Ofrecemos soluciones innovadoras para el amoblamiento de tu hogar con altos estándares de calidad, servicio y respaldo.
+						Tenemos un amplio catálogo de muebles para el hogar y para oficinas, elaborados con materiales de óptima calidad. Garantizamos a nuestros clientes un trabajo serio, profesional y responsable.
+                        Visítanos en Córdoba..</p>
+                </div>
+                    <div class="col-md-6">
+                        <img src="imagenes/imagen.portada.png" alt="Local de Muebles" class="img-fluid">
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="historia">
+        <div class="container">
+             <div class="row">
+         	      <div class="col-md-6">   
+                        <img src="imagenes/quienessomos.jpg" alt="Local de Muebles" class="img-fluid">
+                 </div>
+                    <div class="col-md-6" >
+                        <h2>Quienes somos</h2>
+                        <p>En Muebles Mayo nos mantenemos siempre a la vanguardia en fabricación de muebles, creando nuevas líneas de muebles que satisfagan aún más tus gustos y necesidades.
+
+                        Contamos con profesionales altamente calificados y especialmente seleccionados.
+
+                        ¡Esperamos tu visita!</p>
+                        <p>Somos una empresa familiar apasionada por la creación de muebles de madera que embellecen y transforman hogares. Desde 1978, nos dedicamos a proporcionar piezas únicas y duraderas que cuentan historias y crean recuerdos.</p>
+
+                        <p>Nuestra tradición en la carpintería se ha transmitido de generación en generación, y cada miembro de nuestra familia aporta habilidades artesanales únicas. Cada mueble que creamos es una expresión de nuestro compromiso con la calidad, la artesanía y la atención al detalle.</p>
+
+                         <p>En Muebles Mayo, nos enorgullece ofrecer un servicio personalizado. Nos esforzamos por entender las necesidades y preferencias individuales de cada cliente para crear muebles que se adapten perfectamente a su estilo de vida y hogar.</p>
+                     </div>
+            </div>
+        </div>
+    </section>
+    <section id="catalogo">
+        <div class="container">
+            <h2>Nuestro Catálogo</h2>
+            <!-- Aquí puedes agregar imágenes y descripciones detalladas de tus productos -->
+            <div class="container">
+                <div class="row">
+                    <!-- primera columna -->
+                    <div class="col-md-4">
+                        <img src="imagenes/silla1.jpg" alt="Producto 1" class="img-fluid custom-image">
+                        <p>Silla Eames Blanca</p>
+                        <p>Una silla elegante y resistente hecha de madera de roble laqueada a color blanco.</p>
+                        <!-- Boton de mas detalle -->
+                        <button id="botonDetalles" onclick="mostrarDetalles('Mueble1')">Mostrar Detalles</button>
+                        <div id="detalles-Mueble1" class="detalles">
+                            <p>Material: Roble</p>
+                            <p>Dimensiones: 0.84cm x 0.46cm x 0.38cm</p>
+                            <p>Precio: $20000</p>
+                            <!-- Boton agregar al carrito -->
+                             <div class="products">
+                                 <div class="product" data-id="1" data-name="producto 1" data-price="20000.00">
+                                     <button class="add-to-cart">Agregar al carrito</button>
+                                </div>          
+                            </div>
+                        </div>
+                 </div>
+
+                    <!-- segunda columna -->
+                    <div class="col-md-4">
+                        <img src="imagenes/silla2.jpg" alt="Producto 2" class="img-fluid custom-image">
+                        <p>Silla Milán Blanca</p>
+                        <p>Una silla elegante y resistente hecha de madera de pino laqueada a color blanco.</p>
+                        <!-- Boton mas detalles -->
+                        <button id="botonDetalles" onclick="mostrarDetalles('miMueble')">Mostrar Detalles</button>
+                        <div id="detalles-miMueble" class="detalles">
+                            <p>Material: Roble</p>
+                            <p>Dimensiones: 0.74cm x 0.53cm x 0.45cm</p>
+                            <p>Precio: $25000</p>
+                             <!-- Boton agregar al carrito -->
+                            <div class="products">
+                                <div class="product" data-id="2" data-name="producto 2" data-price="25000.00">
+                                    <button class="add-to-cart">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tercera columna -->
+                    <div class="col-md-4">
+                        <img src="imagenes/silla3.jpg" alt="Producto 3" class="img-fluid custom-image">
+                        <p>Sillita Conejo</p>
+                        <p>Una silla para niños resistente de pino macizo resistente a golpes, color virgen.</p>
+                         <!-- Boton mas detalles -->
+                        <button id="botonDetalles" onclick="mostrarDetalles('miMueble3')">Mostrar Detalles</button>
+                        <div id="detalles-miMueble3" class="detalles">
+                            <p>Material: pino</p>
+                            <p>Dimensiones: 0.45cm x 0.35cm x 0.42cm</p>
+                            <p>Precio: $13000</p>
+                             <!-- Boton agregar al carrito-->
+                            <div class="products">
+                                <div class="product" data-id="3" data-name="producto 3" data-price="13000.00">
+                                    <button class="add-to-cart">Agregar al carrito</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- cuarta columna -->
+                    <div class="col-md-4">
+                        <img src="imagenes/mesadeluz1.jpg" alt="Producto 4" class="img-fluid custom-image">
+                        <p>Mesa de luz de pino masizo con estilo nordico</p>
+                         <!-- Boton mas detalles -->
+                        <button id="botonDetalles" onclick="mostrarDetalles('miMueble4')">Mostrar Detalles</button>
+                        <div id="detalles-miMueble4" class="detalles">
+                            <p>Material: pino</p>
+                            <p>Dimensiones: 0.45cm x 0.25cm x 0.40cm</p>
+                            <p>Precio: $11700</p>
+                             <!-- Boton agregar al carrito -->
+                            <div class="products">
+                                <div class="product" data-id="4" data-name="producto 4" data-price="11700.00">
+                                    <button class="add-to-cart">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- quinta columna -->
+                    <div class="col-md-4">
+                         <img src="imagenes/mesadeluz2.jpg" alt="Producto 5" class="img-fluid custom-image">
+                        <p>Mesa de luz contemporánea de mdf prensado</p>
+                         <!-- Boton mas detalles -->
+                        <button id="botonDetalles" onclick="mostrarDetalles('miMueble5')">Mostrar Detalles</button>
+                        <div id="detalles-miMueble5" class="detalles">
+                            <p>Material: pino</p>
+                            <p>Dimensiones: 0.45cm x 0.30cm x 0.40cm</p>
+                            <p>Precio: $17500</p>
+                             <!-- Boton agregar al carrito -->
+                            <div class="products">
+                                <div class="product" data-id="5" data-name="producto 5" data-price="17500.00">
+                                    <button class="add-to-cart">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- sexta columna -->
+                        <div class="col-md-4">
+                            <img src="imagenes/mesadeluz3.jpg" alt="Producto 6" class="img-fluid custom-image">
+                            <p>Mesa de luz de pino masizo con patas</p>
+                             <!-- Boton mas detalles -->
+                            <button id="botonDetalles" onclick="mostrarDetalles('miMueble6')">Mostrar Detalles</button>
+                            <div id="detalles-miMueble6" class="detalles">
+                                <p>Material: pino</p>
+                                <p>Dimensiones: 0.45cm x 0.25cm x 0.40cm</p>
+                                <p>Precio: $38750</p>
+                                 <!-- Boton agregar al carrito -->
+                                <div class="products">
+                                    <div class="product" data-id="6" data-name="producto 6" data-price="38750.00">
+                                        <button class="add-to-cart">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section de contacto para interaccion entre cliente y compradores -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o comentario? ¡Contáctanos!</p>
+        <!-- Formulario de contacto -->
+        <form action="/procesar-formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button id="enviarCorreo" class="button" type="submit">Enviar Correo</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a class="button-icon" href="https://wa.link/2w5auu"><img src="./imagenes/icon-phone.svg"></a>
+            <a class="button-icon" href="mailto:nicolas.van.meegroot@mi.unc.edu.ar"><img src="./imagenes/icon-important_mail.svg"></a>
+            <a class="button-icon" href="https://www.instagram.com/nicovanmeegroot/?next=%2F"><img src="./imagenes/icon-instagram.svg"></a>
+            <a class="button-icon" href="https://github.com/nicovanm?tab=repositories"><img src="./imagenes/icon-github.svg"></a>
+        </div>
+            <div class="footer-content">
+            <p>Hecho con el ❤️ por Nico.</p>
+            <p>Copyright 2023 - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
