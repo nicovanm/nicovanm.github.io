@@ -1,5 +1,5 @@
 # nicovanm.github.io
-Primer proyecto con lenguajes como html, ccs y javascript, enfocandome en un local venta al publico de muebles
+Primer proyecto con lenguajes como html 5, ccs y javascript, enfocandome en un local venta al publico de muebles
  Link para visualizar este repositorio en funcionamiento https://nicovanm.github.io/
  Interactividad Sohisticada: Gracias a JavaScript, la página ofrece una experiencia de usuario dinámica con funciones intuitivas de navegación y personalización.
 
